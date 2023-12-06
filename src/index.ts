@@ -46,3 +46,24 @@ let arbaz :Saniya = {
     name:"arbaz",
     surname:"Khan",
 } 
+
+//Generics Type
+interface Arbaz<T>{
+    name:string,
+    age:number
+}
+
+let SaniyaValue : Arbaz<object> = {
+    name:"Arbaz",
+    age:21
+}
+
+interface SufiyaType{
+    x:number,
+    y:number
+}
+
+let SufiyaMethod = (sufia:SufiyaType) => {
+    console.log(`${sufia.x}" " ${sufia.y}`)
+}
+let answer = SufiyaMethod({x:21,y:22});
